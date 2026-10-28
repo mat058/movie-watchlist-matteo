@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # @sveltejs/kit braucht Node >= 22.17 (.npmrc hat engine-strict=true)
+  NODE_VERSION = "24"
